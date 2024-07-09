@@ -9,7 +9,7 @@ categories:
 citation:
   bibtex: "ou comme une citation en BibTeX :"
   introduction: "Si vous avez trouvé cela utile, veuillez citer comme suit :"
-contact_note: Vous pouvez également ajouter une petite note sur la meilleure façon de vous contacter.
+contact_note:
 cv:
   address: Adresse
   area: Domaine
