@@ -60,7 +60,7 @@ cv:
   url: Url
   username: Nom d'utilisateur
   volunteer: Bénévole
-  work: Travail
+  work: Expériences professionnelles
 footer_text: > # le symbole ">" signifie d'ignorer les nouvelles lignes jusqu'à "titles:"
   Développé avec <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> avec le thème <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>.
   Hébergé par <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
