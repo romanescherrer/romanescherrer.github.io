@@ -1,82 +1,53 @@
 ---
 page_id: project_1
 layout: page
-title: project 1
-description: with background image
+title: Digital Holography
+description: Enhancing Plankton Monitoring with AI
 img: assets/img/project1/holo.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+---
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+> ## Informations
+>
+> ---
+>
+> - `Project type`: Thesis
+> - `Role`: PhD Student
+> - `Period`: 2020-2023
+> - `Partners`: ISEA, IRD, IFREMER
+> - `Research Themes` : object detection, tracking, classification, instance segmentation, image reconstruction, generative models, 3D imaging.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Overview
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+---
+
+#### `Plankton: A Vital Resource to Monitor`
+
+Water, a vital resource, harbors exceptional biodiversity, dominated by plankton which represents more than 98% of marine biomass. Plankton is crucial for the food chain and climate, producing more than half of the Earth's oxygen and absorbing a large part of carbon dioxide. However, its decline since the second industrial revolution threatens life on Earth, making the study of its abundance and distribution crucial for the preservation of marine ecosystems. Additionally, some species of plankton produce toxins that contaminate marine resources, posing risks to human health. Thus, regular monitoring of plankton is essential to ensure food security and public health.
+
+#### `Traditional Methods and Their Limitations`
+
+Traditional methods of studying plankton, using nets, sampling bottles, or pumps, are laborious and often damage fragile organisms. These manual techniques are insufficient to fully understand the planktonic ecosystem, requiring more efficient and automated methods.
+
+Optical and holographic imaging instruments such as SIPPER, ISIIS, IFCB, and LISST-Holo2 have been developed to analyze plankton in situ and in the laboratory. These devices allow the study of particles of various sizes, deployed on different platforms like ROVs, fixed moorings, and AUVs. However, these devices are generally very expensive, energy-consuming, and cannot be deployed on a large scale. Additionally, the amount of data produced by these systems is such that only advanced computer vision methods can effectively process them.
+
+#### `Towards a Low-Cost Monitoring System`
+
+To multiply study areas, it is necessary to have instruments that are both efficient and inexpensive. Digital holography, requiring a light source and a camera, offers low-cost instruments with a large depth of field, allowing the imaging of microscopic objects without damaging them.
+However, processing holograms is complex and requires iterative algorithms, often difficult to achieve in real-time on low-power embedded systems. Although deep learning methods offer solutions for hologram classification, their integration into in situ systems remains a challenge due to computational and storage constraints.
+
+#### `Research Contributions`
+
+This research project covers the design of the holographic instrument, the creation of new processing pipelines, and deep learning models adapted to holography, meeting end-user constraints and promoting the evolution of planktonic imaging devices.
+
+# Associated Articles
+
+<div class="publications">
+
+{% bibliography -q @*[project=phd] %}
+
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

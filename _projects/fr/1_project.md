@@ -2,7 +2,7 @@
 page_id: project_1
 layout: page
 title: Holographie numérique
-description: Apport de l'intelligence artificielle
+description: Améliorer la surveillance du plancton avec l'IA
 img: assets/img/project1/holo.jpg
 importance: 1
 category: work
@@ -19,8 +19,11 @@ related_publications: false
 > - `Rôle` : Doctorante
 > - `Période` : 2020-2023
 > - `Partenaires` : ISEA, IRD, IFREMER
+> - `Thèmes de recherche` : détection d'objets, tracking, classification, segmentation d'instances, reconstruction d'images, modèles génératifs, imagerie 3D.
 
 ## Présentation
+
+---
 
 #### `Le plancton : une ressource vitale à surveiller`
 
@@ -40,6 +43,8 @@ Le traitement des hologrammes est cependant complexe et exige des algorithmes it
 #### `Contributions de la Recherche`
 
 Ce projet de recherche couvre la conception de l'instrument holographique, la création de nouveaux pipelines de traitement et de modèles de deep learning adaptés à l'holographie, répondant aux contraintes des utilisateurs finaux et favorisant l'évolution des dispositifs d'imagerie planctonique.
+
+---
 
 # Articles associés
 
