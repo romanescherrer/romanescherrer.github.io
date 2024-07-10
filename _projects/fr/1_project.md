@@ -1,82 +1,50 @@
 ---
 page_id: project_1
 layout: page
-title: projeto 1
-description: com imagem de fundo
-img: assets/img/12.jpg
+title: Holographie numérique
+description: Apport de l'intelligence artificielle
+img: assets/img/project1/holo.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Cada projeto tem uma bela página de apresentação de recursos.
-É fácil incluir imagens em um formato flexível de grade de 3 colunas.
-Faça suas fotos 1/3, 2/3 ou largura total.
+---
 
-Para dar um plano de fundo ao seu projeto na página do portfólio, basta adicionar a tag img ao front Matter assim:
+> ## Informations
+>
+> ---
+>
+> - `Type de projet` : Thèse
+> - `Rôle` : Doctorante
+> - `Période` : 2020-2023
+> - `Partenaires` : ISEA, IRD, IFREMER
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Présentation
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+#### `Le plancton : une ressource vitale à surveiller`
+
+L'eau, une ressource vitale, abrite une biodiversité exceptionnelle, dominée par le plancton qui représente plus de 98% de la biomasse marine. Le plancton est crucial pour la chaîne alimentaire et le climat, produisant plus de la moitié de l'oxygène terrestre et absorbant une grande partie du dioxyde de carbone. Cependant, son déclin depuis la seconde révolution industrielle menace la vie sur Terre, rendant l'étude de son abondance et de sa distribution cruciale pour la préservation des écosystèmes marins. Par ailleurs, certaines espèces de plancton produisent des toxines contaminant les ressources marines, posant des risques pour la santé humaine. Ainsi, surveiller régulièrement le plancton est essentiel pour garantir la sécurité alimentaire et la santé publique.
+
+#### `Méthodes Traditionnelles et leurs Limites`
+
+Les méthodes traditionnelles d'étude du plancton, utilisant des filets, des bouteilles de prélèvement ou des pompes, sont laborieuses et endommagent souvent les organismes fragiles. Ces techniques manuelles sont insuffisantes pour appréhender l'écosystème planctonique dans sa globalité, nécessitant des méthodes plus efficaces et automatisées.
+
+Des instruments d'imagerie optique et holographique tels que SIPPER, ISIIS, IFCB et LISST-Holo2 ont été développés pour analyser le plancton in situ et en laboratoire. Ces dispositifs permettent d'étudier des particules de tailles variées, déployées sur diverses plateformes comme les ROVs, les mouillages fixes et les AUVs. Cependant, ces dispositifs sont généralement très coûteux, énergivores et ne peuvent pas être déployés à grande échelle. De plus, la quantité de données produites par ces systèmes est telle que seules des méthodes avancées de vision par ordinateur permettent de les traiter efficacement.
+
+#### `Vers un système low-cost de surveillance`
+
+Pour multiplier les zones d'étude, il est nécessaire de disposer d'instruments à la fois performants et bon marché. L'holographie numérique, nécessitant une source de lumière et une caméra, offre des instruments peu coûteux avec une grande profondeur de champ, permettant d'imager des objets microscopiques sans les endommager.
+Le traitement des hologrammes est cependant complexe et exige des algorithmes itératifs, souvent difficiles à réaliser en temps réel sur des systèmes embarqués à faible consommation. Même si les méthodes d'apprentissage profond proposent des solutions pour la classification des hologrammes, leur intégration dans des systèmes in situ reste un défi en raison des contraintes de calcul et de stockage.
+
+#### `Contributions de la Recherche`
+
+Ce projet de recherche couvre la conception de l'instrument holographique, la création de nouveaux pipelines de traitement et de modèles de deep learning adaptés à l'holographie, répondant aux contraintes des utilisateurs finaux et favorisant l'évolution des dispositifs d'imagerie planctonique.
+
+# Articles associés
+
+<div class="publications">
+
+{% bibliography -q @*[project=phd] %}
+
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

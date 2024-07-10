@@ -3,7 +3,7 @@ page_id: project_1
 layout: page
 title: project 1
 description: with background image
-img: assets/img/12.jpg
+img: assets/img/project1/holo.jpg
 importance: 1
 category: work
 related_publications: true
