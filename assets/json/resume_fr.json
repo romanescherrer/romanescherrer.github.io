@@ -31,7 +31,8 @@
       "studyType": "Thèse doctorale",
       "startDate": "2020-06-01",
       "endDate": "2023-09-25",
-      "score": "10"
+      "score": "10",
+      "courses": ["Deep Learning", "Détection d'objets", "Système embarqué", "Imagerie 3D"]
     },
     {
       "institution": "Université d'Auckland",
@@ -129,6 +130,18 @@
         "Interface graphique (PyQt)",
         "Système embarqué Linux"
       ]
+    },
+    {
+      "name": "Langages maîtrisés",
+      "level": "PhD",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "C++", "Matlab", "Shells Unix (bash, zsh, PowerShell)", "SQL", "LaTeX"]
+    },
+    {
+      "name": "Package spécifiques",
+      "level": "PhD",
+      "icon": "fa-brands fa-python",
+      "keywords": ["Tensorflow", "PyTorch", "Scikit-learn", "Open-CV", "PyQt"]
     },
     {
       "name": "Génie mécanique",
