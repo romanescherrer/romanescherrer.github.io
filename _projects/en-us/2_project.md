@@ -1,8 +1,8 @@
 ---
 page_id: project_2
 layout: page
-title: GNN
-description:
+title: ANR SPIraL
+description: Prediction of Spatial Leptospirosis Risk with GNNs
 img: assets/img/project2/carto.png
 importance: 1
 category: work
@@ -22,7 +22,7 @@ chart:
 > - `Role`: Postdoctoral researcher
 > - `Period`: Jan. 2024 - Jun. 2024
 > - `Partners`: ISEA, IPNC, HSM, IMPMC
-> - `Research Themes` : détection d'objets, tracking, classification, segmentation d'instances, reconstruction d'images, modèles génératifs, imagerie 3D.
+> - `Research Themes` : Graph mining, GNN, Pooling layers, Regression, Classification.
 
 ```geojson
 {
@@ -66,14 +66,28 @@ chart:
 <div class="caption">
     Study location.
 </div>
-## Overview
+
+## `ANR SPIraL: Study of the Leptospira Ecosystem and Leptospirosis Risk`
+
+Leptospirosis is a serious bacterial disease with a significant impact, particularly in tropical regions. Despite its increasing incidence in Europe, notably in France, Belgium, Croatia, and the Netherlands, it remains largely neglected. Each year, it affects nearly one million people and causes 58,900 deaths.
+
+Leptospires chronically colonize the kidneys of mammals and are excreted into the environment, where they can infect humans. The complex interactions between animals, their environment, and humans determine the spread of this disease. Understanding the ecology of leptospires within ecosystems is therefore crucial. Despite decades of studies on leptospirosis as a zoonosis, the ecological determinants of its transmission have not been fully explored.
+
+The SpIRAL project aims to define the habitat of Leptospira outside the host. Its main objectives are:
+
+- Identify the abiotic factors influencing the survival of Leptospira in soils and fresh waters.
+- Characterize the environmental microbiota that hosts Leptospira.
+- Model the dispersion dynamics of Leptospira during rain episodes.
+- Generate a spatial risk map incorporating environmental, ecological, and climatic parameters.
 
 ---
+
+## `Contributions to the Project`
 
 ```echarts
 {
   "title": {
-    "text": "Nombre de cas"
+    "text": "Number of reported cases"
   },
   "responsive": true,
   "tooltip": {},

@@ -22,7 +22,7 @@ chart:
 > - `Rôle`: Post-dostorante
 > - `Période`: Jan. 2024 - Jun. 2024
 > - `Partenaires`: ISEA, IPNC, HSM, IMPMC
-> - `Thèmes de recherche` :
+> - `Thèmes de recherche` : _Graph mining_, GNN, _Pooling layers_, Regression, Classification.
 
 ```geojson
 {
@@ -64,7 +64,7 @@ chart:
 ```
 
 <div class="caption">
-    Study location.
+    Zone d'étude.
 </div>
 
 ## `ANR SPIraL : Étude de l'Écosystème de Leptospira et Risque de Leptospirose`
